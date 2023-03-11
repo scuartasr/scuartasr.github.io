@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Este es un ensayo"
 image: profile.jpg
 about:
   template: jolla
@@ -15,4 +15,4 @@ about:
       href: https://github.com/scuartasr
 ---
 
-About this blog
+Buenasss
