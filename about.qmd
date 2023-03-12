@@ -9,10 +9,10 @@ about:
       href: scuartasr.quarto.pub/
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com/scuartasr/
+      href: https://www.linkedin.com/in/scuartasr/
     - icon: github
       text: GitHub
-      href: https://github.com/scuartasr/
+      href: https://scuartasr.quarto.pub/
 ---
 
 ## ¡Saludos!
