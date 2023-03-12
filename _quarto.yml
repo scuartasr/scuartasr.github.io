@@ -7,6 +7,10 @@ website:
   navbar:
     right:
       - about.qmd
+      - icon: briefcase
+        href: scuartasr.quarto.pub/
+      - icon: linkedin
+        href: https://linkedin.com/scuartasr/
       - icon: github
         href: https://github.com/scuartasr/
 format:

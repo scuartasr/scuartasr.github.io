@@ -9,7 +9,7 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Este es un ensayo",
+    "title": "Sobre mí",
     "section": "",
     "text": "Buenasss"
   },
@@ -24,6 +24,13 @@
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/ensayo/index.html",
+    "href": "posts/ensayo/index.html",
+    "title": "Simón Cuartas Rendón",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   }

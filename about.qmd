@@ -1,18 +1,32 @@
 ---
-title: "Este es un ensayo"
-image: profile.jpg
+title: "Sobre mí"
+image: foto_cocorna.png
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
+    - icon: briefcase
+      text: Quarto Pub
+      href: scuartasr.quarto.pub/
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://linkedin.com/scuartasr/
     - icon: github
-      text: Github
-      href: https://github.com/scuartasr
+      text: GitHub
+      href: https://github.com/scuartasr/
 ---
 
-Buenasss
+## ¡Saludos!
+
+# ¿Quién soy?
+
+Soy **Simón Cuartas Rendón**, tengo 23 años y soy un apasionado de la estadística, la literatura, la pedagogía, algunos videojuegos y algunos temas económicos y financieros.
+
+# ¿Qué hago?
+
+Actualmente soy estudiante de último semestre de Estadística en la Universidad Nacional de Colombia, sede Medellín, y me desempeño como aprendiz universitario en el Grupo Bancolombia, donde coopero con el equipo de Banca Masiva buscando oportunidades para llevar la inclusión financiera al siguiente nivel.
+
+# ¿Qué se puede encontrar aquí?
+
+En este blog quiero compartir con el mundo algunos proyectos que he realizado durante mi pregrado o por iniciativa propia. Algunos de ellos tendrán un esquema expositivo, pero espero que otros se asemejen más a un tutorial, de manera que otras personas puedan replicar fácilmente las metodologías que uso en sus propios proyectos.
+
+¡Nos vemos! :)
