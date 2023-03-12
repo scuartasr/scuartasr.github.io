@@ -1,0 +1,42 @@
+---
+title: "Titanic"
+author: "Simón Cuartas Rendón"
+date: "2023-03-12"
+categories: [visualización, power bi, historia]
+---
+
+¿Qué mejor proyecto para este blog que uno sobre un tema que me ha apasionado por años? Desde niño, cuando supe la historia del RMS Titanic, me he sentido profundamente intrigado por su historia, por lo que quiero compartir el siguiente reporte elaborado en Power BI que tiene información sobre la **White Star Line**, que es la compañía naviera que encargó la construcción de este buque de pasajeros y mercancías y que, se suponía, iba a operar hasta que ocurrió la tragedia en el cuarto día de su viaje inaugural; y por supuesto, el reporte exhibe varias cifras interesantes relacionadas con los pasajeros que iban a bordo del Titanic en su fatídico primer cruce del Atlántico Norte.
+
+[![Imagen colorizada del Titanic siendo remolcado del puerto de Southampton para dirigirse a Cherburgo a recoger algunos pasajeros adicionales.](titanic.jpg){fig-alt="Fotografía colorizada del Titanic siendo remolcado por algunos barcos auxiliares del puerto de Southampton"}](https://co.pinterest.com/pin/741194051166534626/)
+
+## Preguntas problematizadoras
+
+Si quieres hacer más interesante tu recorrido por las pestañas de este reporte, te invito a que trates de responder las preguntas que te dejo a continuación con ayuda del reporte.
+
+1.  ¿Qué es la ***White Star Line***?
+
+2.  ¿Cuáles son los buques más grandes que operó la ***White Star Line***? ¿En qué posición se encuentra el Titanic?
+
+3.  ¿Cuántos barcos perdió la ***White Star Line*** durante sus años de operación?
+
+4.  ¿Cuántas personas podía acomodar el Titanic en total?
+
+5.  ¿Cuántas personas viajaban en el Titanic durante su viaje inaugural?
+
+6.  ¿Qué clase acomodó una mayor cantidad de pasajeros?
+
+7.  ¿Qué equipo de tripulantes aportó la mayor cantidad de fallecimientos dentro del conjunto de trabajadores de la ***White Star Line***?
+
+<iframe title="pbi_titanic" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiYjcwMmZmNGItZDgwMS00YjMwLWIzYWEtYzJmNzQ2ZGZlNzM2IiwidCI6IjU3N2ZjMWQ4LTA5MjItNDU4ZS04N2JmLWVjNGY0NTVlYjYwMCIsImMiOjR9" frameborder="0" allowFullScreen="true">
+
+</iframe>
+
+## Un poco de historia
+
+Cháchara bacana sobre la historia del Titanic.
+
+## Datos
+
+![Ilustración del Titanic con la popa levantada sobre el océano luego de que la proa se encontrase completamente inundada.](titanic_sinking.jpg)
+
+La base de datos de tripulantes y pasajeros del viaje inaugural del Titanic los obtuve en [Kaggle](https://www.kaggle.com/datasets/aliaamiri/titanic-passengers-and-crew-complete-list), mientras que la información sobre los barcos operados por la ***White Star Line*** está disponible en el repositorio [Ship Scraper](https://raw.githubusercontent.com/ghoye/ship_scraper/main/ships.csv) del usuario ghoye de GitHub. A los autores de ambas bases de datos, mis agradecimientos por disponibilizar esta información para todos.

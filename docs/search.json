@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "¡Bievenido!",
     "section": "",
-    "text": "Titanic\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMar 12, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMar 11, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMar 8, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Titanic\n\n\n\n\n\n\n\nvisualización\n\n\npower bi\n\n\nhistoria\n\n\n\n\n\n\n\n\n\n\n\nMar 12, 2023\n\n\nSimón Cuartas Rendón\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -32,6 +32,34 @@
     "href": "posts/ensayo/index.html",
     "title": "Titanic",
     "section": "",
-    "text": "Cháchara sobre el Titanic"
+    "text": "¿Qué mejor proyecto para este blog que uno sobre un tema que me ha apasionado por años? Desde niño, cuando supe la historia del RMS Titanic, me he sentido profundamente intrigado por su historia, por lo que quiero compartir el siguiente reporte elaborado en Power BI que tiene información sobre la White Star Line, que es la compañía naviera que encargó la construcción de este buque de pasajeros y mercancías y que, se suponía, iba a operar hasta que ocurrió la tragedia en el cuarto día de su viaje inaugural; y por supuesto, el reporte exhibe varias cifras interesantes relacionadas con los pasajeros que iban a bordo del Titanic en su fatídico primer cruce del Atlántico Norte."
+  },
+  {
+    "objectID": "posts/titanic/index.html",
+    "href": "posts/titanic/index.html",
+    "title": "Titanic",
+    "section": "",
+    "text": "¿Qué mejor proyecto para este blog que uno sobre un tema que me ha apasionado por años? Desde niño, cuando supe la historia del RMS Titanic, me he sentido profundamente intrigado por su historia, por lo que quiero compartir el siguiente reporte elaborado en Power BI que tiene información sobre la White Star Line, que es la compañía naviera que encargó la construcción de este buque de pasajeros y mercancías y que, se suponía, iba a operar hasta que ocurrió la tragedia en el cuarto día de su viaje inaugural; y por supuesto, el reporte exhibe varias cifras interesantes relacionadas con los pasajeros que iban a bordo del Titanic en su fatídico primer cruce del Atlántico Norte."
+  },
+  {
+    "objectID": "posts/titanic/index.html#preguntas-problematizadoras",
+    "href": "posts/titanic/index.html#preguntas-problematizadoras",
+    "title": "Titanic",
+    "section": "Preguntas problematizadoras",
+    "text": "Preguntas problematizadoras\nSi quieres hacer más interesante tu recorrido por las pestañas de este reporte, te invito a que trates de responder las preguntas que te dejo a continuación con ayuda del reporte.\n\n¿Qué es la White Star Line?\n¿Cuáles son los buques más grandes que operó la White Star Line? ¿En qué posición se encuentra el Titanic?\n¿Cuántos barcos perdió la White Star Line durante sus años de operación?\n¿Cuántas personas podía acomodar el Titanic en total?\n¿Cuántas personas viajaban en el Titanic durante su viaje inaugural?\n¿Qué clase acomodó una mayor cantidad de pasajeros?\n¿Qué equipo de tripulantes aportó la mayor cantidad de fallecimientos dentro del conjunto de trabajadores de la White Star Line?"
+  },
+  {
+    "objectID": "posts/titanic/index.html#datos",
+    "href": "posts/titanic/index.html#datos",
+    "title": "Titanic",
+    "section": "Datos",
+    "text": "Datos\n\n\n\nIlustración del Titanic con la popa levantada sobre el océano luego de que la proa se encontrase completamente inundada.\n\n\nLa base de datos de tripulantes y pasajeros del viaje inaugural del Titanic los obtuve en Kaggle, mientras que la información sobre los barcos operados por la White Star Line está disponible en el repositorio Ship Scraper del usuario ghoye de GitHub. A los autores de ambas bases de datos, mis agradecimientos por disponibilizar esta información para todos."
+  },
+  {
+    "objectID": "posts/titanic/index.html#un-poco-de-historia",
+    "href": "posts/titanic/index.html#un-poco-de-historia",
+    "title": "Titanic",
+    "section": "Un poco de historia",
+    "text": "Un poco de historia\nCháchara bacana sobre la historia del Titanic."
   }
 ]
