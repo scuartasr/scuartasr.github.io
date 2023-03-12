@@ -1,12 +1,10 @@
 ---
-title: "Simón Cuartas Rendón"
+title: "Titanic"
 author: "Tristan O'Malley"
-date: "2023-03-08"
+date: "2023-03-12"
 categories: [news]
 ---
 
-This is the first post in a Quarto blog. Welcome!
+Cháchara sobre el Titanic
 
-![](thumbnail.jpg)
-
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+<iframe title="pbi_titanic" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiYjcwMmZmNGItZDgwMS00YjMwLWIzYWEtYzJmNzQ2ZGZlNzM2IiwidCI6IjU3N2ZjMWQ4LTA5MjItNDU4ZS04N2JmLWVjNGY0NTVlYjYwMCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
