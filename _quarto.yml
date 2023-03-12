@@ -8,11 +8,11 @@ website:
     right:
       - about.qmd
       - icon: briefcase
-        href: scuartasr.quarto.pub/
+        href: https://scuartasr.quarto.pub/
       - icon: linkedin
         href: https://www.linkedin.com/in/scuartasr/
       - icon: github
-        href: https://scuartasr.quarto.pub/
+        href: https://github.com/scuartasr/
 format:
   html:
     theme: sandstone

@@ -6,13 +6,13 @@ about:
   links:
     - icon: briefcase
       text: Quarto Pub
-      href: scuartasr.quarto.pub/
+      href: https://scuartasr.quarto.pub/
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/scuartasr/
     - icon: github
       text: GitHub
-      href: https://scuartasr.quarto.pub/
+      href: https://github.com/scuartasr/
 ---
 
 ## ¡Saludos!
