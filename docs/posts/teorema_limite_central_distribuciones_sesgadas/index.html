@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Simón Cuartas Rendón">
-<meta name="dcterms.date" content="2023-03-12">
+<meta name="dcterms.date" content="2023-03-19">
 
-<title>Simón Cuartas - Análisis descriptivo sobre los pasajeros del RMS Titanic</title>
+<title>Simón Cuartas - Tamaños de muestra para la aplicación del TLC en distribuciones Poisson con medias poblacionales pequeñas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -63,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -115,11 +116,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Análisis descriptivo sobre los pasajeros del RMS Titanic</h1>
+      <h1 class="title">Tamaños de muestra para la aplicación del TLC en distribuciones Poisson con medias poblacionales pequeñas</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Visualización</div>
-                <div class="quarto-category">Power BI</div>
-                <div class="quarto-category">Historia</div>
+                <div class="quarto-category">Simulación</div>
+                <div class="quarto-category">Estadística</div>
               </div>
                   </div>
   </div>
@@ -137,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 12, 2023</p>
+        <p class="date">March 19, 2023</p>
       </div>
     </div>
     
@@ -155,37 +155,89 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>¿Qué mejor proyecto para este blog que uno sobre un tema que me ha apasionado por años? Desde niño, cuando supe la historia del RMS Titanic, me he sentido profundamente intrigado por su historia, por lo que quiero compartir el siguiente reporte elaborado en Power BI que tiene información sobre la <strong>White Star Line</strong>, que es la compañía naviera que encargó la construcción de este buque de pasajeros y mercancías y que, se suponía, iba a operar hasta que ocurrió la tragedia en el cuarto día de su viaje inaugural; y por supuesto, el reporte exhibe varias cifras interesantes relacionadas con los pasajeros que iban a bordo del Titanic en su fatídico primer cruce del Atlántico Norte.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://co.pinterest.com/pin/741194051166534626/"><img src="titanic.jpg" class="img-fluid figure-img" alt="Fotografía colorizada del Titanic siendo remolcado por algunos barcos auxiliares del puerto de Southampton"></a></p>
-<p></p><figcaption class="figure-caption">Imagen colorizada del Titanic siendo remolcado del puerto de Southampton para dirigirse a Cherburgo a recoger algunos pasajeros adicionales.</figcaption><p></p>
-</figure>
+<div class="alert alert-primary" role="alert">
+  <h4 class="alert-heading anchored">Trabajo académico</h4>
+  <p></p>Esta entrada es una adaptación al formato blog de un póster que presenté en el XXIX Simposio Internacional de Estadística que se llevó a cabo en septiembre de 2022 en Manizales, Colombia.<p></p>
+  <hr>
+  <p class="mb-0">Al final se adjunta el póster que se presentó en este evento académico.</p>
 </div>
-<section id="preguntas-problematizadoras" class="level2">
-<h2 class="anchored" data-anchor-id="preguntas-problematizadoras">Preguntas problematizadoras</h2>
-<p>Si quieres hacer más interesante tu recorrido por las pestañas de este reporte, te invito a que trates de responder las preguntas que te dejo a continuación con ayuda del reporte.</p>
-<ol type="1">
-<li><p>¿Qué es la <strong><em>White Star Line</em></strong>?</p></li>
-<li><p>¿Cuáles son los buques más grandes que operó la <strong><em>White Star Line</em></strong>? ¿En qué posición se encuentra el Titanic?</p></li>
-<li><p>¿Cuántos barcos perdió la <strong><em>White Star Line</em></strong> durante sus años de operación?</p></li>
-<li><p>¿Cuántas personas podía acomodar el Titanic en total?</p></li>
-<li><p>¿Cuántas personas viajaban en el Titanic durante su viaje inaugural?</p></li>
-<li><p>¿Qué clase acomodó una mayor cantidad de pasajeros?</p></li>
-<li><p>¿Qué equipo de tripulantes aportó la mayor cantidad de fallecimientos dentro del conjunto de trabajadores de la <strong><em>White Star Line</em></strong>?</p></li>
-</ol>
-<iframe title="pbi_titanic" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiYjcwMmZmNGItZDgwMS00YjMwLWIzYWEtYzJmNzQ2ZGZlNzM2IiwidCI6IjU3N2ZjMWQ4LTA5MjItNDU4ZS04N2JmLWVjNGY0NTVlYjYwMCIsImMiOjR9" frameborder="0" allowfullscreen="true">
-</iframe>
+<div class="alert alert-info" role="alert">
+  <p>Este trabajo fue presentado por:</p>
+  <p>- Simón Cuartas Rendón</p>
+  <p>- Freddy Hernández Barajas</p>
+</div>
+<section id="resumen" class="level2">
+<h2 class="anchored" data-anchor-id="resumen">Resumen</h2>
+<p>El <strong>Teorema del Límite Central (TLC)</strong> es uno de los más importantes en estadística, y para su aplicación es común considerar que tamaños muestrales mayores a treinta (si el tamaño muestral es <span class="math inline">\(n\)</span>, entonces <span class="math inline">\(n \geq 30\)</span>) son suficientes para usar este teorema. Sin embargo, esto no es verdad en general, especialmente cuando se tienen distribuciones como la Poisson, que es asimétrica cuando la media poblacional es pequeña, y no hay claridad de cuál es el tamaño de muestra mínimo suficiente para casos como este. Así, usando <strong><em>simulación estadística</em></strong> con ayuda de <strong>R</strong>, es posible estudiar cuáles pares de tamaños y medias muestrales son adecuados para usar el TLC mediante una generación de 400 muestras para 12 tamaños de muestra y 80 medias poblaciones diferentes, usando a su vez el test de normalidad de Lilliefors y repitiendo esto 2150 veces para cada par de tamaño y media poblacional para calcular una tasa de no rechazo de la hipótesis nula usando el valor p con un nivel de significancia de <span class="math inline">\(\alpha = 0.05\)</span>. Finalmente, se encontró que para muestras muy pequeñas, tamaños de muestra mayores de 1000 unidades son preferibles sin importar la media poblacional asociada.</p>
 </section>
-<section id="datos" class="level2">
-<h2 class="anchored" data-anchor-id="datos">Datos</h2>
+<section id="introducción" class="level2">
+<h2 class="anchored" data-anchor-id="introducción">Introducción</h2>
+<p>Sea <span class="math inline">\(X_1, \ X_2, \dots\)</span> una sucesión de variables independientes e idénticamente distribuidas (i.i.d.), cuya función generadora de momentos (f.g.m.) existe en un vecindario alrededor de cero, esto es <span class="math inline">\(M_{X_n} (t)\)</span> existe para $|t| &lt; h, \ h &gt; 0$. Supóngase que <span class="math inline">\(\mathbb{E} [X_n] = \mu\)</span> y que $\mathbb{Var} [X_n] = \sigma^2 &lt; \infty$. Considérese <span class="math inline">\(\bar{X}_n = \frac{1}{n} \sum_{i=1}^{n} X_i\)</span> y <span class="math inline">\(G_n (x)\)</span> como la función de distribución acumulada (f.d.a.) de <span class="math inline">\(Z_n = \frac{\sqrt{n} (\bar{X}_m - \mu )}{\sigma}\)</span>. Entonces:</p>
+<p><span class="math display">\[\lim_{n \to x} G_n(x) = \int_{-\infty}^{x} \frac{1}{\sqrt{2 \pi}} \exp \left[ - \frac{y^2}{2} \right] \text{dy}\]</span></p>
+<p>Lo anterior implica que <span class="math inline">\(Z_n = \frac{\sqrt{n} (\bar{X} - \mu)}{\sigma} \ \stackrel{\text{d}}{\rightarrow} \ Z\)</span>, con <span class="math inline">\(Z \sim \text{N} (0, \ \sigma^2)\)</span>.</p>
+<p>En la práctica, no es posible tener una muestra de tamaño infinito, pero se pueden tomar muestras que sean lo suficientemente grandes como para asegurar buenas aproximaciones asintóticas. Varios autores han considerado que para distribuciones simétricas pueden tener su muestra muestral distribuyéndose como una normal cuando el tamaño muestral es <span class="math inline">\(n \geq 30\)</span>, pero es claro que las distribuciones Poisson con medias poblacionales pequeñas no satisfacen esta propiedad, de manera que el objetivo es explorar con el uso de la simulación estadística cuáles tamaños muestrales pueden ser considerados lo suficientemente grandes de manera que sea adecuada la aplicación del Teorema del Límite Central.</p>
+</section>
+<section id="cómo-fueron-realizadas-las-simulaciones" class="level2">
+<h2 class="anchored" data-anchor-id="cómo-fueron-realizadas-las-simulaciones">¿Cómo fueron realizadas las simulaciones?</h2>
+<p>Todas las simulaciones se corrieron usando el lenguaje de programación estadístico <strong>R</strong>. Para lograr esto, se creó una función que recibiera tres parámetros: <span class="math inline">\(m\)</span>, que es el número de muestras aleatorias a considerar para cada par de tamaño de muestra y media poblacional (y que por defecto se situó en <span class="math inline">\(m = 500\)</span>), <span class="math inline">\(n\)</span>, que es el tamaño de muestra que tendrían cada una de estas muestras aleatorias y <span class="math inline">\(\lambda\)</span>, que es la media poblacional asociada a estas muestras. Generadas las muestras, se calcularon las medias muestrales <span class="math inline">\(\bar{X}_n\)</span> para cada muestra, y con esto fue posible determinar si el conjunto de <span class="math inline">\(m\)</span> medias muestrales cumplían o no el test de normalidad de Lilliefors, que parte del siguiente par de hipótesis:</p>
+<p><span class="math display">\[
+\begin{cases}
+H_0: \text{Las medias muestrales fueron obtenidas de una distribución normal.} \\
+H_1: \text{Las medias muestrales } \textbf{no } \text{fueron obtenidas de una distribución normal.}
+\end{cases}
+\]</span></p>
+<p>Además, considerando que este es un problema que involucra el estudio de la simetría de las distribuciones generadas, se realizó el cálculo de los coeficientes muestrales de curtosis (<span class="math inline">\(b_2\)</span>) y de asimetría (<span class="math inline">\(b_1\)</span>) como se muestra a continuación:</p>
+<p>$$b_1 = \frac{m_3}{s^3} \ \ \ \ \ \ \ \ \ \ \ \ b_2 = \frac{m_4}{s^4}$$</p>
+<p>donde <span class="math inline">\(m_i\)</span> es el $i$-ésimo momento central y <span class="math inline">\(s^2\)</span> es la varianza muestral.</p>
+<p>Vale la pena recordar que una función normal tiene un coeficiente de curtosis poblacional de <span class="math inline">\(\beta_2 = 3\)</span> y un coeficiente de asimetría poblacional de <span class="math inline">\(\beta_2 = 0\)</span>; luego, se espera que en la medida que la media poblacional usada para generar diferentes muestras aleatorias para cada tamaño muestral crezca, el coeficiente de curtosis se acercará a tres y el de asimetría a cero.</p>
+<p>Además, se resalta que el valor de la estadística, el valor p y las medias truncadas al 10 % para la curtosis (para evitar valores extremos) y la asimetría fueron almacenados.</p>
+<p>Ahora, se debe considerar que bajo circunstancias aleatorias, como las de este experimento, es importante repetir esta simulación muchas veces para cada par de media población y tamaño muestral, de forma que se pudiera chequear cuántas muestras aleatorias no rechazaron el test de normalidad de Lilliefors, así que la función recién descrita fue corrida 2150 veces para cada par de <span class="math inline">\(n\)</span> y <span class="math inline">\(\lambda\)</span>, lo que implica que se obtuvo un total de <span class="math inline">\(2064000\)</span> registros. Con esto en mente, los parámetros empleados para esta simulación fueron:</p>
+<ul>
+<li><p>Doce diferentes tamaños de muestra: potencias de dos desde la primera hasta la décimo segunda potencia <span class="math inline">\((n = 2, 4, 8, \dots 2048, 4096)\)</span>.</p></li>
+<li><p>Ochenta medias poblacionales distintas: desde 0.25 hasta 20 con saltos de 0.25 unidades <span class="math inline">\((\lambda = 0.25, 0.5, 0.75, \dots, 19.5, 19.75, 20)\)</span>.</p></li>
+</ul>
+</section>
+<section id="análisis-de-la-asimetría-para-diferentes-tamaños-de-muestra-y-medias-poblacionales" class="level2">
+<h2 class="anchored" data-anchor-id="análisis-de-la-asimetría-para-diferentes-tamaños-de-muestra-y-medias-poblacionales">Análisis de la asimetría para diferentes tamaños de muestra y medias poblacionales</h2>
+<p>Primero, es importante ver cómo la curtosis y la asimetría cambian de acuerdo con el valor de la media poblacional <span class="math inline">\(\lambda\)</span> y el tamaño muestral <span class="math inline">\(n\)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="titanic_sinking.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Ilustración del Titanic con la popa levantada sobre el océano luego de que la proa se encontrase completamente inundada.</figcaption><p></p>
+<p><img src="F3_Skew.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Coeficiente de curtosis de asimetría de acuerdo con la media poblacional y el tamaño muestral. La línea negra punteada en β₁=0 es el coeficiente de asimetría de una distribución normal.</figcaption><p></p>
 </figure>
 </div>
-<p>La base de datos de tripulantes y pasajeros del viaje inaugural del Titanic los obtuve en <a href="https://www.kaggle.com/datasets/aliaamiri/titanic-passengers-and-crew-complete-list">Kaggle</a>, mientras que la información sobre los barcos operados por la <strong><em>White Star Line</em></strong>&nbsp;está disponible en el repositorio <a href="https://raw.githubusercontent.com/ghoye/ship_scraper/main/ships.csv">Ship Scraper</a> del usuario ghoye de GitHub. A los autores de ambas bases de datos, mis agradecimientos por disponibilizar esta información para todos.</p>
+<p>Nótese que para todos los tamaños muestrales <span class="math inline">\(n\)</span>, la asimetría siempre es positiva y comienza tomando valores alejados de cero, indicando una asimetría positiva, lo cual es típico de las distribuciones Poisson, pero en la medida en que la media <span class="math inline">\(\lambda\)</span> es más grande, el coeficiente de asimetría tiende a acercarse a cero, lo cual es positivo para la aplicación del TLC. Es importante anotar que este acercamiento a cero es más acelerado para medias muestrales para tamaños muestrales pequeños. Después, revisando el coeficiente de curtosis:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="F2_Kurt.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Curtosis de acuerdo con la media poblacional y el tamaño muestral. La línea negra punteada en β₂=3 es el coeficiente de curtosis de una distribución normal.</figcaption><p></p>
+</figure>
+</div>
+<p>En este caso el objetivo es que el coeficiente de curtosis se acerque lo más posible a tres, que es el valor que tienen para esta estadística las distribuciones normales. Por tanto, en la figura 2 se puede observar que para tamaños muestrales pequeños esto no ocurre cuando la media poblacional también es pequeña, pero converge a tres rápidamente, especialmente para <span class="math inline">\(\lambda \geq 5\)</span>, pero este no es el caso para tamaños muestrales <span class="math inline">\(n \leq 64\)</span>, que convergen rápidamente a valores de curtosis menores a tres, lo que se asocia con distribuciones leptocúrticas, que tienen más valores atípicos de las distribuciones normales (esto se relaciona con colas más pesadas en sus distribuciones).</p>
+<p>Esto permite que esperemos que para medias poblaciones pequeñas, el TLC funcione bien con tamaños muestrales pequeños, toda vez que para medias poblacionales pequeñas se requerirán tamaños muestrales muy grandes para siquiera considerar el uso del TLC.</p>
+</section>
+<section id="resultados" class="level2">
+<h2 class="anchored" data-anchor-id="resultados">Resultados</h2>
+<p>Con las simulaciones, se aplicó el test de normalidad de Lilliefors y se almacenaron los valores p.&nbsp;Estos tests fueron realizados considerando niveles de significancia de <span class="math inline">\(\alpha = 0.05\)</span>, y luego de verificó cuántas simulaciones tuvieron valores p mayores al nivel de significancia, permitiendo calcular una tasa de no rechazho de tests. Con esta información, es posible construir una gráfica como la que se exhibe en la figura 3.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="F1_Rate.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Tasa de no rechazo de la hipótesis nula. Elaboración propia.</figcaption><p></p>
+</figure>
+</div>
+<p>La figura 3 muestra que cuando el tamaño muestral es pequeño, es difícil conseguir una tasa lo suficientemente buena como para considerar que el TLC está trabajando bien, especialmente para medias poblacionales pequeñas. Sin embargo, en la medida que el tamaño de muestra se hace más grande, el TLC comienza a trabajar para para tamaños muestrales tan grandes como 128 (en azul oscuro), pues tiene una tasa de no rechazo de la hipótesis de nula del <span class="math inline">\(80 \%\)</span> aproximadamente cuando <span class="math inline">\(\lambda \approx 2.5\)</span>. Para un tamaño muestral de 256, la tasa de no rechazo está aún por debajo del <span class="math inline">\(30\%\)</span>. Por el contrario, esta tasa está sobre el <span class="math inline">\(95\%\)</span> para tamaños muestrales de 2048 y 4096.</p>
+</section>
+<section id="conclusiones" class="level2">
+<h2 class="anchored" data-anchor-id="conclusiones">Conclusiones</h2>
+<p>Se puede verificar que treinta no es un número mágico para el uso del Teorema del Límite Central en todo tipo de distribuciones, y que tamaños muestrales mucho más grandes serán necesarios para distribuciones Poisson con medias poblacionales pequeñas, que finalmente dependerán de cuán pequeño es $\lambda$. De acuerdo con las simulaciones, un tamaño de muestra de <span class="math inline">\(n = 1024\)</span> funcionará bien cuando <span class="math inline">\(\lambda = 0.5\)</span>.</p>
+<ul>
+<li><p><strong>Jolliffe, I. T.</strong> (1995). Sample Sizes and the Central Limite Theorem: The Poisson Distribution as an Illustration. In The American Statistician (<strong>Vol. 49</strong>, Issue 3, pp.&nbsp;269-269). Informa UK Limited. https://doi.org/10.1080/00031305.1995.10476161.</p></li>
+<li><p><strong>Core Team.</strong> (2022). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL: https://www.R-project.org/.</p></li>
+</ul>
+</section>
+<section id="póster-presentado" class="level1">
+<h1>Póster presentado</h1>
+<iframe src="https://drive.google.com/file/d/19v8dAqGQBnn7y0v9pzYi7dn8knhCjCFM/preview" width="820" height="1200" allow="autoplay"></iframe>
 
 
 </section>

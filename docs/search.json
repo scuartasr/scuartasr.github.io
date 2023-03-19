@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "¡Bievenido!",
     "section": "",
-    "text": "Titanic\n\n\n\n\n\n\n\nvisualización\n\n\npower bi\n\n\nhistoria\n\n\n\n\n\n\n\n\n\n\n\nMar 12, 2023\n\n\nSimón Cuartas Rendón\n\n\n\n\n\n\nNo matching items"
+    "text": "Tamaños de muestra para la aplicación del TLC en distribuciones Poisson con medias poblacionales pequeñas\n\n\n\n\n\n\n\nSimulación\n\n\nEstadística\n\n\n\n\n\n\n\n\n\n\n\nMar 19, 2023\n\n\nSimón Cuartas Rendón\n\n\n\n\n\n\n  \n\n\n\n\nAnálisis descriptivo sobre los pasajeros del RMS Titanic\n\n\n\n\n\n\n\nVisualización\n\n\nPower BI\n\n\nHistoria\n\n\n\n\n\n\n\n\n\n\n\nMar 12, 2023\n\n\nSimón Cuartas Rendón\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -37,29 +37,78 @@
   {
     "objectID": "posts/titanic/index.html",
     "href": "posts/titanic/index.html",
-    "title": "Titanic",
+    "title": "Análisis descriptivo sobre los pasajeros del RMS Titanic",
     "section": "",
     "text": "¿Qué mejor proyecto para este blog que uno sobre un tema que me ha apasionado por años? Desde niño, cuando supe la historia del RMS Titanic, me he sentido profundamente intrigado por su historia, por lo que quiero compartir el siguiente reporte elaborado en Power BI que tiene información sobre la White Star Line, que es la compañía naviera que encargó la construcción de este buque de pasajeros y mercancías y que, se suponía, iba a operar hasta que ocurrió la tragedia en el cuarto día de su viaje inaugural; y por supuesto, el reporte exhibe varias cifras interesantes relacionadas con los pasajeros que iban a bordo del Titanic en su fatídico primer cruce del Atlántico Norte."
   },
   {
     "objectID": "posts/titanic/index.html#preguntas-problematizadoras",
     "href": "posts/titanic/index.html#preguntas-problematizadoras",
-    "title": "Titanic",
+    "title": "Análisis descriptivo sobre los pasajeros del RMS Titanic",
     "section": "Preguntas problematizadoras",
     "text": "Preguntas problematizadoras\nSi quieres hacer más interesante tu recorrido por las pestañas de este reporte, te invito a que trates de responder las preguntas que te dejo a continuación con ayuda del reporte.\n\n¿Qué es la White Star Line?\n¿Cuáles son los buques más grandes que operó la White Star Line? ¿En qué posición se encuentra el Titanic?\n¿Cuántos barcos perdió la White Star Line durante sus años de operación?\n¿Cuántas personas podía acomodar el Titanic en total?\n¿Cuántas personas viajaban en el Titanic durante su viaje inaugural?\n¿Qué clase acomodó una mayor cantidad de pasajeros?\n¿Qué equipo de tripulantes aportó la mayor cantidad de fallecimientos dentro del conjunto de trabajadores de la White Star Line?"
   },
   {
     "objectID": "posts/titanic/index.html#datos",
     "href": "posts/titanic/index.html#datos",
-    "title": "Titanic",
+    "title": "Análisis descriptivo sobre los pasajeros del RMS Titanic",
     "section": "Datos",
     "text": "Datos\n\n\n\nIlustración del Titanic con la popa levantada sobre el océano luego de que la proa se encontrase completamente inundada.\n\n\nLa base de datos de tripulantes y pasajeros del viaje inaugural del Titanic los obtuve en Kaggle, mientras que la información sobre los barcos operados por la White Star Line está disponible en el repositorio Ship Scraper del usuario ghoye de GitHub. A los autores de ambas bases de datos, mis agradecimientos por disponibilizar esta información para todos."
   },
   {
     "objectID": "posts/titanic/index.html#un-poco-de-historia",
     "href": "posts/titanic/index.html#un-poco-de-historia",
-    "title": "Titanic",
+    "title": "Análisis descriptivo sobre los pasajeros del RMS Titanic",
     "section": "Un poco de historia",
     "text": "Un poco de historia\nCháchara bacana sobre la historia del Titanic."
+  },
+  {
+    "objectID": "posts/teorema_limite_central_distribuciones_sesgadas/index.html",
+    "href": "posts/teorema_limite_central_distribuciones_sesgadas/index.html",
+    "title": "Tamaños de muestra para la aplicación del TLC en distribuciones Poisson con medias poblacionales pequeñas",
+    "section": "",
+    "text": "Esta entrada es una adaptación al formato blog de un póster que presenté en el XXIX Simposio Internacional de Estadística que se llevó a cabo en septiembre de 2022 en Manizales, Colombia.\n  \n  Al final se adjunta el póster que se presentó en este evento académico."
+  },
+  {
+    "objectID": "posts/teorema_limite_central_distribuciones_sesgadas/index.html#resumen",
+    "href": "posts/teorema_limite_central_distribuciones_sesgadas/index.html#resumen",
+    "title": "Tamaños de muestra para la aplicación del TLC en distribuciones Poisson con medias poblacionales pequeñas",
+    "section": "Resumen",
+    "text": "Resumen\nEl Teorema del Límite Central (TLC) es uno de los más importantes en estadística, y para su aplicación es común considerar que tamaños muestrales mayores a treinta (si el tamaño muestral es \\(n\\), entonces \\(n \\geq 30\\)) son suficientes para usar este teorema. Sin embargo, esto no es verdad en general, especialmente cuando se tienen distribuciones como la Poisson, que es asimétrica cuando la media poblacional es pequeña, y no hay claridad de cuál es el tamaño de muestra mínimo suficiente para casos como este. Así, usando simulación estadística con ayuda de R, es posible estudiar cuáles pares de tamaños y medias muestrales son adecuados para usar el TLC mediante una generación de 400 muestras para 12 tamaños de muestra y 80 medias poblaciones diferentes, usando a su vez el test de normalidad de Lilliefors y repitiendo esto 2150 veces para cada par de tamaño y media poblacional para calcular una tasa de no rechazo de la hipótesis nula usando el valor p con un nivel de significancia de \\(\\alpha = 0.05\\). Finalmente, se encontró que para muestras muy pequeñas, tamaños de muestra mayores de 1000 unidades son preferibles sin importar la media poblacional asociada."
+  },
+  {
+    "objectID": "posts/teorema_limite_central_distribuciones_sesgadas/index.html#introducción",
+    "href": "posts/teorema_limite_central_distribuciones_sesgadas/index.html#introducción",
+    "title": "Tamaños de muestra para la aplicación del TLC en distribuciones Poisson con medias poblacionales pequeñas",
+    "section": "Introducción",
+    "text": "Introducción\nSea \\(X_1, \\ X_2, \\dots\\) una sucesión de variables independientes e idénticamente distribuidas (i.i.d.), cuya función generadora de momentos (f.g.m.) existe en un vecindario alrededor de cero, esto es \\(M_{X_n} (t)\\) existe para $|t| < h, \\ h > 0$. Supóngase que \\(\\mathbb{E} [X_n] = \\mu\\) y que $\\mathbb{Var} [X_n] = \\sigma^2 < \\infty$. Considérese \\(\\bar{X}_n = \\frac{1}{n} \\sum_{i=1}^{n} X_i\\) y \\(G_n (x)\\) como la función de distribución acumulada (f.d.a.) de \\(Z_n = \\frac{\\sqrt{n} (\\bar{X}_m - \\mu )}{\\sigma}\\). Entonces:\n\\[\\lim_{n \\to x} G_n(x) = \\int_{-\\infty}^{x} \\frac{1}{\\sqrt{2 \\pi}} \\exp \\left[ - \\frac{y^2}{2} \\right] \\text{dy}\\]\nLo anterior implica que \\(Z_n = \\frac{\\sqrt{n} (\\bar{X} - \\mu)}{\\sigma} \\ \\stackrel{\\text{d}}{\\rightarrow} \\ Z\\), con \\(Z \\sim \\text{N} (0, \\ \\sigma^2)\\).\nEn la práctica, no es posible tener una muestra de tamaño infinito, pero se pueden tomar muestras que sean lo suficientemente grandes como para asegurar buenas aproximaciones asintóticas. Varios autores han considerado que para distribuciones simétricas pueden tener su muestra muestral distribuyéndose como una normal cuando el tamaño muestral es \\(n \\geq 30\\), pero es claro que las distribuciones Poisson con medias poblacionales pequeñas no satisfacen esta propiedad, de manera que el objetivo es explorar con el uso de la simulación estadística cuáles tamaños muestrales pueden ser considerados lo suficientemente grandes de manera que sea adecuada la aplicación del Teorema del Límite Central."
+  },
+  {
+    "objectID": "posts/teorema_limite_central_distribuciones_sesgadas/index.html#cómo-fueron-realizadas-las-simulaciones",
+    "href": "posts/teorema_limite_central_distribuciones_sesgadas/index.html#cómo-fueron-realizadas-las-simulaciones",
+    "title": "Tamaños de muestra para la aplicación del TLC en distribuciones Poisson con medias poblacionales pequeñas",
+    "section": "¿Cómo fueron realizadas las simulaciones?",
+    "text": "¿Cómo fueron realizadas las simulaciones?\nTodas las simulaciones se corrieron usando el lenguaje de programación estadístico R. Para lograr esto, se creó una función que recibiera tres parámetros: \\(m\\), que es el número de muestras aleatorias a considerar para cada par de tamaño de muestra y media poblacional (y que por defecto se situó en \\(m = 500\\)), \\(n\\), que es el tamaño de muestra que tendrían cada una de estas muestras aleatorias y \\(\\lambda\\), que es la media poblacional asociada a estas muestras. Generadas las muestras, se calcularon las medias muestrales \\(\\bar{X}_n\\) para cada muestra, y con esto fue posible determinar si el conjunto de \\(m\\) medias muestrales cumplían o no el test de normalidad de Lilliefors, que parte del siguiente par de hipótesis:\n\\[\n\\begin{cases}\nH_0: \\text{Las medias muestrales fueron obtenidas de una distribución normal.} \\\\\nH_1: \\text{Las medias muestrales } \\textbf{no } \\text{fueron obtenidas de una distribución normal.}\n\\end{cases}\n\\]\nAdemás, considerando que este es un problema que involucra el estudio de la simetría de las distribuciones generadas, se realizó el cálculo de los coeficientes muestrales de curtosis (\\(b_2\\)) y de asimetría (\\(b_1\\)) como se muestra a continuación:\n$$b_1 = \\frac{m_3}{s^3} \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ b_2 = \\frac{m_4}{s^4}$$\ndonde \\(m_i\\) es el $i$-ésimo momento central y \\(s^2\\) es la varianza muestral.\nVale la pena recordar que una función normal tiene un coeficiente de curtosis poblacional de \\(\\beta_2 = 3\\) y un coeficiente de asimetría poblacional de \\(\\beta_2 = 0\\); luego, se espera que en la medida que la media poblacional usada para generar diferentes muestras aleatorias para cada tamaño muestral crezca, el coeficiente de curtosis se acercará a tres y el de asimetría a cero.\nAdemás, se resalta que el valor de la estadística, el valor p y las medias truncadas al 10 % para la curtosis (para evitar valores extremos) y la asimetría fueron almacenados.\nAhora, se debe considerar que bajo circunstancias aleatorias, como las de este experimento, es importante repetir esta simulación muchas veces para cada par de media población y tamaño muestral, de forma que se pudiera chequear cuántas muestras aleatorias no rechazaron el test de normalidad de Lilliefors, así que la función recién descrita fue corrida 2150 veces para cada par de \\(n\\) y \\(\\lambda\\), lo que implica que se obtuvo un total de \\(2064000\\) registros. Con esto en mente, los parámetros empleados para esta simulación fueron:\n\nDoce diferentes tamaños de muestra: potencias de dos desde la primera hasta la décimo segunda potencia \\((n = 2, 4, 8, \\dots 2048, 4096)\\).\nOchenta medias poblacionales distintas: desde 0.25 hasta 20 con saltos de 0.25 unidades \\((\\lambda = 0.25, 0.5, 0.75, \\dots, 19.5, 19.75, 20)\\)."
+  },
+  {
+    "objectID": "posts/teorema_limite_central_distribuciones_sesgadas/index.html#análisis-de-la-asimetría-para-diferentes-tamaños-de-muestra-y-medias-poblacionales",
+    "href": "posts/teorema_limite_central_distribuciones_sesgadas/index.html#análisis-de-la-asimetría-para-diferentes-tamaños-de-muestra-y-medias-poblacionales",
+    "title": "Tamaños de muestra para la aplicación del TLC en distribuciones Poisson con medias poblacionales pequeñas",
+    "section": "Análisis de la asimetría para diferentes tamaños de muestra y medias poblacionales",
+    "text": "Análisis de la asimetría para diferentes tamaños de muestra y medias poblacionales\nPrimero, es importante ver cómo la curtosis y la asimetría cambian de acuerdo con el valor de la media poblacional \\(\\lambda\\) y el tamaño muestral \\(n\\).\n\n\n\nCoeficiente de curtosis de asimetría de acuerdo con la media poblacional y el tamaño muestral. La línea negra punteada en β₁=0 es el coeficiente de asimetría de una distribución normal.\n\n\nNótese que para todos los tamaños muestrales \\(n\\), la asimetría siempre es positiva y comienza tomando valores alejados de cero, indicando una asimetría positiva, lo cual es típico de las distribuciones Poisson, pero en la medida en que la media \\(\\lambda\\) es más grande, el coeficiente de asimetría tiende a acercarse a cero, lo cual es positivo para la aplicación del TLC. Es importante anotar que este acercamiento a cero es más acelerado para medias muestrales para tamaños muestrales pequeños. Después, revisando el coeficiente de curtosis:\n\n\n\nCurtosis de acuerdo con la media poblacional y el tamaño muestral. La línea negra punteada en β₂=3 es el coeficiente de curtosis de una distribución normal.\n\n\nEn este caso el objetivo es que el coeficiente de curtosis se acerque lo más posible a tres, que es el valor que tienen para esta estadística las distribuciones normales. Por tanto, en la figura 2 se puede observar que para tamaños muestrales pequeños esto no ocurre cuando la media poblacional también es pequeña, pero converge a tres rápidamente, especialmente para \\(\\lambda \\geq 5\\), pero este no es el caso para tamaños muestrales \\(n \\leq 64\\), que convergen rápidamente a valores de curtosis menores a tres, lo que se asocia con distribuciones leptocúrticas, que tienen más valores atípicos de las distribuciones normales (esto se relaciona con colas más pesadas en sus distribuciones).\nEsto permite que esperemos que para medias poblaciones pequeñas, el TLC funcione bien con tamaños muestrales pequeños, toda vez que para medias poblacionales pequeñas se requerirán tamaños muestrales muy grandes para siquiera considerar el uso del TLC."
+  },
+  {
+    "objectID": "posts/teorema_limite_central_distribuciones_sesgadas/index.html#resultados",
+    "href": "posts/teorema_limite_central_distribuciones_sesgadas/index.html#resultados",
+    "title": "Tamaños de muestra para la aplicación del TLC en distribuciones Poisson con medias poblacionales pequeñas",
+    "section": "Resultados",
+    "text": "Resultados\nCon las simulaciones, se aplicó el test de normalidad de Lilliefors y se almacenaron los valores p. Estos tests fueron realizados considerando niveles de significancia de \\(\\alpha = 0.05\\), y luego de verificó cuántas simulaciones tuvieron valores p mayores al nivel de significancia, permitiendo calcular una tasa de no rechazho de tests. Con esta información, es posible construir una gráfica como la que se exhibe en la figura 3.\n\n\n\nTasa de no rechazo de la hipótesis nula. Elaboración propia.\n\n\nLa figura 3 muestra que cuando el tamaño muestral es pequeño, es difícil conseguir una tasa lo suficientemente buena como para considerar que el TLC está trabajando bien, especialmente para medias poblacionales pequeñas. Sin embargo, en la medida que el tamaño de muestra se hace más grande, el TLC comienza a trabajar para para tamaños muestrales tan grandes como 128 (en azul oscuro), pues tiene una tasa de no rechazo de la hipótesis de nula del \\(80 \\%\\) aproximadamente cuando \\(\\lambda \\approx 2.5\\). Para un tamaño muestral de 256, la tasa de no rechazo está aún por debajo del \\(30\\%\\). Por el contrario, esta tasa está sobre el \\(95\\%\\) para tamaños muestrales de 2048 y 4096."
+  },
+  {
+    "objectID": "posts/teorema_limite_central_distribuciones_sesgadas/index.html#conclusiones",
+    "href": "posts/teorema_limite_central_distribuciones_sesgadas/index.html#conclusiones",
+    "title": "Tamaños de muestra para la aplicación del TLC en distribuciones Poisson con medias poblacionales pequeñas",
+    "section": "Conclusiones",
+    "text": "Conclusiones\nSe puede verificar que treinta no es un número mágico para el uso del Teorema del Límite Central en todo tipo de distribuciones, y que tamaños muestrales mucho más grandes serán necesarios para distribuciones Poisson con medias poblacionales pequeñas, que finalmente dependerán de cuán pequeño es $\\lambda$. De acuerdo con las simulaciones, un tamaño de muestra de \\(n = 1024\\) funcionará bien cuando \\(\\lambda = 0.5\\).\n\nJolliffe, I. T. (1995). Sample Sizes and the Central Limite Theorem: The Poisson Distribution as an Illustration. In The American Statistician (Vol. 49, Issue 3, pp. 269-269). Informa UK Limited. https://doi.org/10.1080/00031305.1995.10476161.\nCore Team. (2022). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL: https://www.R-project.org/."
   }
 ]

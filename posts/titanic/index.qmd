@@ -1,8 +1,8 @@
 ---
-title: "Titanic"
+title: "Análisis descriptivo sobre los pasajeros del RMS Titanic"
 author: "Simón Cuartas Rendón"
 date: "2023-03-12"
-categories: [visualización, power bi, historia]
+categories: [Visualización, Power BI, Historia]
 ---
 
 ¿Qué mejor proyecto para este blog que uno sobre un tema que me ha apasionado por años? Desde niño, cuando supe la historia del RMS Titanic, me he sentido profundamente intrigado por su historia, por lo que quiero compartir el siguiente reporte elaborado en Power BI que tiene información sobre la **White Star Line**, que es la compañía naviera que encargó la construcción de este buque de pasajeros y mercancías y que, se suponía, iba a operar hasta que ocurrió la tragedia en el cuarto día de su viaje inaugural; y por supuesto, el reporte exhibe varias cifras interesantes relacionadas con los pasajeros que iban a bordo del Titanic en su fatídico primer cruce del Atlántico Norte.
@@ -30,10 +30,6 @@ Si quieres hacer más interesante tu recorrido por las pestañas de este reporte
 <iframe title="pbi_titanic" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiYjcwMmZmNGItZDgwMS00YjMwLWIzYWEtYzJmNzQ2ZGZlNzM2IiwidCI6IjU3N2ZjMWQ4LTA5MjItNDU4ZS04N2JmLWVjNGY0NTVlYjYwMCIsImMiOjR9" frameborder="0" allowFullScreen="true">
 
 </iframe>
-
-## Un poco de historia
-
-Cháchara bacana sobre la historia del Titanic.
 
 ## Datos
 
