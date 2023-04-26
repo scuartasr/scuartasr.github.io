@@ -1,0 +1,19 @@
+---
+title: "Hoja de vida"
+about:
+  template: jolla
+  links:
+    - icon: briefcase
+      text: Quarto Pub
+      href: https://scuartasr.quarto.pub/
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/scuartasr/
+    - icon: github
+      text: GitHub
+      href: https://github.com/scuartasr/
+---
+
+```{=html}
+<iframe src="https://drive.google.com/file/d/1Llpt1uukP1ei-A5nMdcSoU5FNoG8hglT/preview" width="820" height="1200" allow="autoplay"></iframe>
+```
